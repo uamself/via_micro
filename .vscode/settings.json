@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./via_web/Cargo.toml",
+        "./via_web/Cargo.toml"
+    ],
+    "rust-analyzer.showUnlinkedFileNotification": false
+}

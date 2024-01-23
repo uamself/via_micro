@@ -1,0 +1,57 @@
+@url = http://localhost:3000
+
+
+### 路径参数
+GET {{url}} HTTP/1.1
+### 
+
+
+###
+GET {{url}}/path1/张三 HTTP/1.1
+###
+
+###
+GET {{url}}/path2/张三/18 HTTP/1.1
+###
+
+###
+GET {{url}}/path3/user/1/team/123 HTTP/1.1
+###
+
+### 查询参数
+GET {{url}}/query1?name=zhangsan&age=18 HTTP/1.1
+### 
+### 查询参数
+GET {{url}}/query2?name=zhangsan&age=18 HTTP/1.1
+### 
+
+
+### header
+GET {{url}}/header HTTP/1.1
+### 
+
+### JSON
+POST  {{url}}/json HTTP/1.1
+content-type: application/json
+
+{
+    "name": "larry",
+    "age": 18
+}
+### 
+
+### JSON
+POST  {{url}}/json1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "larry",
+    "age": "18"
+}
+### 
+
+### 
+GET   {{url}}/list HTTP/1.1
+### 
+
+

@@ -1,0 +1,54 @@
+@url = http://localhost:3000
+
+
+
+### 
+POST  {{url}}/user/query_by_name HTTP/1.1
+content-type: application/json
+
+{
+    "name": "测试"
+}
+### 
+
+### 
+POST  {{url}}/user/page HTTP/1.1
+content-type: application/json
+
+{
+    "page_num": 1,
+    "page_size": 10
+}
+### 
+
+###  根据ID查询用户
+GET {{url}}/user/query/3 HTTP/1.1
+### 
+
+### 插入用户
+POST  {{url}}/user/insert HTTP/1.1
+content-type: application/json
+
+{
+    "name": "测试用户",
+    "password": "123456",
+    "role_id": 33
+}
+### 
+
+### 删除用户
+GET {{url}}/user/delete/3 HTTP/1.1
+###
+
+### 更新用户
+POST  {{url}}/user/update HTTP/1.1
+content-type: application/json
+
+{
+    "id": 3,
+    "name": "测试用户->修改成测试用户了",
+    "password": "1234566",
+    "role_id": 44
+}
+###
+

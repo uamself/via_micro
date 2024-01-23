@@ -1,0 +1,3 @@
+[workspace]
+members = ["via_basic", "via_web"]
+resolver = "2"
